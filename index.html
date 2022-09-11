@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Add icon libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="figs/r.png"/>
+    
+    <title>Rahul's Homepage</title>
+    <style>
+        .pub, .nav-link {
+            color: #343a40;
+            background-color: transparent;
+        }
+
+        .pub:hover {
+            color: #23272b;
+            border-bottom: 0px;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            color: #23272b;
+            border-bottom: 0px;
+            text-decoration: none;
+            background-color: #e2dcf3
+        }
+
+        .pdf {
+            color: #b31b1b;
+        }
+
+        .pdf:hover {
+            color: #711111;
+        }
+
+        .pdf:not([href]):not([tabindex]) {
+            color: darkgrey;
+            text-decoration: none;
+        }
+
+        .jumbotron {
+            background-color:#eeebf8 !important; 
+        }
+
+        .socialicon {
+            background: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            vertical-align: middle;
+            padding: 10px;
+            margin: 0px 10px 0px 0px;
+        }
+
+        .socialicon:hover {
+            background: #007bff;
+            color: white;
+        }
+
+        .socialicongroup {
+            margin: 0px 0px 1rem 0px;
+        }
+
+        button:focus {
+            outline: 0px;
+        }
+
+        .card:hover {
+            border-color: black;
+            background-color: #fafafd;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0; padding-bottom: 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="text-center" style="padding-bottom: 15px;">
+                        <img src="./figs/profile.png" class="rounded my-2" style="width: 175px; height:auto;" alt="Profile Picture">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="text-sm-left text-center">
+                        <h1>Rahul Chandan</h1>
+                        <p><b>PhD Candidate, UC Regents' Fellow</b><br>
+                            Center of Control, Dynamical Systems, and Computation<br>
+                            Department of Electrical and Computer Engineering<br>
+                            University of California, Santa Barbara<br>
+                            Email: <a href="mailto:rchandan@ucsb.edu"><tt>rchandan@ucsb.edu</tt></a>
+                        </p>
+                        <div class="socialicongroup">
+                            <a href="https://scholar.google.com/citations?user=u113FDMAAAAJ&hl=en"><i class="ai ai-google-scholar ai-2x socialicon"></i></a>
+                            <a href="https://www.researchgate.net/profile/Rahul-Chandan-2"><i class="ai ai-researchgate ai-2x socialicon"></i></a>
+                            <a href="https://www.linkedin.com/in/rahulchandan"><i class="fa fa-linkedin fa-2x socialicon"></i></a>
+                            <a href="https://github.com/rahul-chandan"><i class="fa fa-github fa-2x socialicon"></i></a>
+                            <a href="./misc/RahulChandanCV.pdf"><i class="ai ai-cv ai-2x socialicon"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="nav">
+                <ul class="nav nav-tabs" role="tablist" style="border-bottom: 0px;"> 
+                    <li class="nav-item" role="presentation"> 
+                        <button class="nav-link active" id="home-tab" data-toggle="tab" href="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                    </li> 
+                    <!-- <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="research-tab" data-toggle="tab" href="#research" type="button" role="tab" aria-controls="research" aria-selected="false">Research</button>
+                    </li> -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="publications-tab" data-toggle="tab" href="#publications" type="button" role="tab" aria-controls="publications" aria-selected="false">Publications</button>
+                    </li>
+                    <li class="nav-item" role="presentation"> 
+                        <button class="nav-link" id="software-tab" data-toggle="tab" href="#software" type="button" role="tab" aria-controls="software" aria-selected="false">Software</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top:30px; margin-bottom: 30px">
+        <div class="tab-content">            
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div>
+                    <p class="text-justify">
+                        I am a PhD student in the Department of Electrical and Computer Engineering, University of California, Santa Barbara.
+                        My supervisor is <a href="https://www.ece.ucsb.edu/~jrmarden/index.html">Jason Marden</a>.  Previously, I completed my BASc in Engineering Science (Electrical and Computer Engineering Option) with a minor in Robotics and Mechatronics at the University of Toronto.
+                    </p>
+                </div>
+                <div>
+                    <p class="text-justify"><strong>Research Overview:</strong> My research work focuses on the applications of game theory and optimization to problems at the intersection of economics, engineering, computer science and operations research.  I have recently been investigating the design of coordination mechanisms and the manipulation of information in multiagent systems (for example, traffic routing, political campaigns, flocks of drones, etc.).</p>
+                    <ul class="list-unstyled">
+                        <li class="media">
+                            <img src="./figs/hippos.jpg" class="rounded mr-3" style="width:120px; height:auto;" alt="A game of Hungry, Hungry Hippos.">
+                            <div class="media-body">
+                                <p class="text-justify" style="margin-bottom: 0px;"><strong>1) Coordination mechanisms for the common good:</strong>  In systems with limited resources, the uncoordinated actions of self-interested decision makers have been observed to significantly deviate from joint behaviour that would otherwise maximize the system welfare (see, for example, the <a href="https://en.wikipedia.org/wiki/Tragedy_of_the_commons"><em>tragedy of the commons</em></a> and <a href="https://en.wikipedia.org/wiki/Price_of_anarchy"><em>Price of Anarchy</em></a> in economics).  The study of <em>coordination mechanisms</em> aims to identify interventions that mitigate such losses in the system welfare.  Examples of coordination mechanisms are monetary tolls and rebates in transportation networks.  Though inefficiencies under self-interested decision making are inevitable, appropriately designed coordination mechanisms significantly improve the system welfare of the emergent behaviour.<br>
+                                Within this research area, I have pursued the following directions:</p>
+                                <ul style="margin-bottom: 1rem; list-style: initial; padding-left: 1rem;">
+                                    <li>Efficient and exact techniques for computing optimal coordination mechanisms [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Working Papers']['w1'])">W1</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Journal Articles']['j2'])">J2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c6'])">C6</a>];</li>
+                                    <li>Robustness of coordination mechanisms to information inconsistencies [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c7'])">C7</a>]; and,</li>
+                                    <li>Inherent tradeoffs in the joint optimization of the worst- and best-case efficiency [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Working Papers']['w3'])">W3</a>], and the short- and long-term efficiency [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Working Papers']['w4'])">W4</a>].</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="./figs/poker.jpg" class="rounded mr-3" style="width:120px; height:auto;" alt="A game of chess before play begins.">
+                            <div class="media-body">
+                                <p class="text-justify" style="margin-bottom: 0px;"><strong>2) The strategic role of information in competitive environments:</strong> Real-world competitive resource allocation problems (for example, political campaigns, competitive markets, military strategy, etc.) can be represented as vast interaction graphs with self-interested decision makers at the nodes, and competitions over valuable prizes on the edges.  Beyond the characterization of strategic behaviour under established models (for example, positional games, contests, Colonel Blotto games, etc.), it is important to determine whether exogenous mechanisms exist whereby a decision maker can improve her competitive position.  My recent work in this area centres on identifying the benefits that withholding, revealing, and otherwise manipulating information can have in competitive environments.<br>
+                                Within this research area, I have pursued the following directions:</p>
+                                <ul style="margin-bottom: 1rem; list-style: initial; padding-left: 1rem;">
+                                    <li>Value of budgetary and system-level information in competitive environments [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Working Papers']['w2'])">W2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c4'])">C4</a>];</li>
+                                    <li>Revealing strategic information to improve one's competitive position (for example, pre-commitments, concessions) [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c5'])">C5</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c9'])">C9</a>]; and,</li>
+                                    <li>Delegation of budgetary resources in teams [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Working Papers']['w2'])">W2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c8'])">C8</a>].</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <h3 style="margin-top:30px; margin-bottom: 30px">Select Publications</h3>
+                <div class="row" id="selpub"></div>
+                <h3 style="margin-top:30px; margin-bottom: 30px">News</h3>
+                <div class="row" id="news" style="margin-bottom: 50px"></div>
+            </div>
+            <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-tab">
+                <p>
+                    My research work focuses on the applications of game theory and optimization to problems at the intersection of engineering, computer science and operations research.
+                    I have recently been investigating the design of influence mechanisms and the manipulation of information for the coordination of multiagent systems (for example, traffic routing, political campaigns, flocks of drones, etc.).
+                </p>
+            </div>
+            <div class="tab-pane fade" id="publications" role="tabpanel" aria-labelledby="publications-tab">
+            </div>
+            <div class="tab-pane fade" id="software" role="tabpanel" aria-labelledby="software-tab">
+                <p class="text-justify">
+                    I have prepared software packages to accompany some of my publications in the hope that interested readers may take additional value from my work by playing around with the code, and deriving the simulation results for themselves.
+                </p>
+                <p class="text-justify">
+                    I am by no means an experienced programmer in any of the programming languages used, and there may very well be bugs and inconsistencies in the code provided.
+                    I welcome any feedback regarding improvements to these packages, but cannot promise to respond, or implement any changes, in a timely manner.
+                    Nevertheless, feel free to contact me with your feedback at <tt>rchandan@ucsb.edu</tt>.
+                </p>
+                <p class="text-justify">The packages below are organized by their corresponding publication:</p>
+                <div style="margin-bottom: 50px">
+                <ul>
+                    <li>
+                        Chandan R, Paccagnan D, Marden JR (2021) <a href="./software/resalloc-poa.html">When Smoothness is Not Enough: Toward Exact Quanitification and Optimization of the Price of Anarchy</a>. <i>Mathematics of Operations Research (MOR)</i>, Submitted.
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title text-capitalize" id="modalTitle">Modal Title</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div id="modalAuthors">Modal Authors</div>
+                    <div id="modalAbstract">Modal Abstract.</div>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <a id="modalarXiv" class="pdf"><i class="fas fa-globe fa-2x"></i></a>
+                    <a id="modalPDF" class="pdf"><i class="fas fa-file-pdf fa-2x"></i></a>
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron text-center" style="margin-bottom: 0">
+        <p>This page's code is available on <a href="https://github.com/rahul-chandan">GitHub</a> and is covered by the <a href="./gpl-3.0.txt">GNU Standard License, Version 3 (GPLv3)</a>.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/db57e2a7e9.js"></script>
+    <script type="text/javascript" src="news.js"></script>
+    <script type="text/javascript" src="publications.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
