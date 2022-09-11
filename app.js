@@ -1,17 +1,17 @@
 var idx, pubsCards="", pubsHTML="", newsShort="", newsLong="";
 
 selPubs = [];
-selPubs.push(publications["Working Papers"]["w3"]);
-selPubs.push(publications["Working Papers"]["w2"]);
-selPubs.push(publications["Working Papers"]["w1"]);
+//selPubs.push(publications["In Review"]["w3"]);
+//selPubs.push(publications["In Review"]["w2"]);
+selPubs.push(publications["In Review"]["w1"]);
 selPubs.push(publications["Journal Articles"]["j2"]);
 for (idx in selPubs) {
     pub = selPubs[idx];
     if (idx<4) {
-        if (pub.status == "working") {
-            pubsCards += '<div class="col-lg-3 col-md-6 col-sm-12 mb-4"><a href="#" class="pub" data-toggle="modal" data-target="#myModal" onclick="fillModal(selPubs['+idx+'])" id="'+ 'pub_' + idx + '"><div class="card h-100"><div class="card-body"><h6 class="card-title text-capitalize">' + pub.title + '</h6><h6  class="card-subtitle mb-2 text-muted"><small>' + pub.authors + '</small></h6><p><i>Working Paper</i></p></div></div></a></div>';
+        if (pub.status == "in review") {
+            pubsCards += '<div class="col-lg-3 col-md-6 col-sm-12 mb-4"><a href="#" class="pub" data-toggle="modal" data-target="#myModal" onclick="fillModal(selPubs['+idx+'])" id="'+ 'pub_' + idx + '"><div class="card h-100"><div class="card-body"><h6 class="card-title text-capitalize">' + pub.title + '</h6><h6  class="card-subtitle mb-2 text-muted"><small>' + pub.authors + '</small></h6><p>' + pub.conference + " <i>(" + pub.status + ')</i></p></div></div></a></div>';
         } else {
-            pubsCards += '<div class="col-lg-3 col-md-6 col-sm-12 mb-4"><a href="#" class="pub" data-toggle="modal" data-target="#myModal" onclick="fillModal(selPubs['+idx+'])" id="'+ 'pub_' + idx + '"><div class="card h-100"><div class="card-body"><h6 class="card-title text-capitalize">' + pub.title + '</h6><h6  class="card-subtitle mb-2 text-muted"><small>' + pub.authors + '</small></h6><p>' + pub.conference + " (" + pub.status + ')</p></div></div></a></div>';
+            pubsCards += '<div class="col-lg-3 col-md-6 col-sm-12 mb-4"><a href="#" class="pub" data-toggle="modal" data-target="#myModal" onclick="fillModal(selPubs['+idx+'])" id="'+ 'pub_' + idx + '"><div class="card h-100"><div class="card-body"><h6 class="card-title text-capitalize">' + pub.title + '</h6><h6  class="card-subtitle mb-2 text-muted"><small>' + pub.authors + '</small></h6><p>' + pub.conference + " <i>(" + pub.date + ')</i></p></div></div></a></div>';
         }
     }
 }
@@ -22,10 +22,10 @@ for (keyIdx in Object.keys(publications)) {
     pubsHTML += '<h5>' + key + '</h5><ul style="margin-bottom: 50px">';
     for (pubIdx in publications[key]) {
         pub = publications[key][pubIdx];
-        if (pub.status == "working") {
-            pubsHTML+='<li style="margin-bottom: 15px"><a class="text-capitalize" href="'+pub.url+'" target="_blank">'+pub.title+'</a><br>'+pub.authors+', '+pub.date+'.</li>';
+        if (pub.status == "in review") {
+           pubsHTML+='<li style="margin-bottom: 15px"><a class="text-capitalize" href="'+pub.url+'" target="_blank">'+pub.title+'</a><br>'+pub.authors+'<br>Submitted to <i>'+pub.conferencelong+'</i></li>';
         } else {
-            pubsHTML+='<li style="margin-bottom: 15px"><a class="text-capitalize" href="'+pub.url+'" target="_blank">'+pub.title+'</a><br>'+pub.authors+'<br><i>'+pub.conferencelong+'</i> ('+pub.status+'), '+pub.date+'.</li>';
+            pubsHTML+='<li style="margin-bottom: 15px"><a class="text-capitalize" href="'+pub.url+'" target="_blank">'+pub.title+'</a><br>'+pub.authors+'<br><i>'+pub.conferencelong+'</i> <i>('+pub.status+')<\i>, '+pub.date+'.</li>';
         }
     }
     pubsHTML += "</ul>";

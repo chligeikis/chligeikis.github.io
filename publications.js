@@ -1,59 +1,15 @@
 publications = {
-    "Working Papers": {
-        "w5":{
-            "title": "The Art of Concession in General Lotto Games",
-            "authors": "<b>R. Chandan</b>, K. Paarporn, D. Kovenock, M. Alizadeh and J. R. Marden",
-            "conference": "TBA",
-            "conferencelong": "To Be Announced (TBA)",
-            "date": "2021",
-            "status": "working",
-            "pdfFile": "./publications/chandan2021art.pdf",
-            "url": "",
-            "abstract": "Success in adversarial environments often requires investment into additional resources in order to improve one's competitive position. But, can intentionally decreasing one's own competitiveness ever provide strategic benefits in such settings? In this paper, we focus on characterizing the role of ``concessions'' as a component of strategic decision making. Specifically, we investigate whether a player can gain an advantage by either conceding budgetary resources or conceding valuable prizes to an opponent. While one might na{\"i}vely assume that the player cannot, our work demonstrates that -- perhaps surprisingly -- concessions do offer strategic benefits when made correctly. In the context of General Lotto games, we first show that neither budgetary concessions nor value concessions can be advantageous to either player in a 1-vs.-1 scenario. However, in settings where two players compete against a common adversary, we find opportunities for one of the two players to improve her payoff by conceding a prize to the adversary. We provide necessary and sufficient conditions on the parameters for which such concessions exist, and identify the optimal prize value to concede."
-        },
-        "w4":{
-            "title": "Balancing Asymptotic and Transient Efficiency Guarantees in Set Covering Games",
-            "authors": "R. Konda, <b>R. Chandan</b>, D. Grimsman and J. R. Marden",
-            "conference": "TBA",
-            "conferencelong": "To Be Announced (TBA)",
-            "date": "2021",
-            "status": "working",
-            "pdfFile": "",
-            "url": "https://arxiv.org/abs/2106.04031",
-            "abstract": "Game theoretic approaches have gained traction as a robust methodology for designing distributed local algorithms that induce a desired overall system configuration in a multi-agent setting. However, much of the emphasis in these approaches is on providing asymptotic guarantees on the performance of network of agents, and there is a gap in the study of efficiency guarantees along transients of these distributed algorithms. Therefore, in this paper, we study the transient efficiency guarantees of a natural game-theoretic algorithm in the class of set covering games, which have been used to model a variety of applications. Our main results characterize the optimal utility design that maximizes the guaranteed efficiency along the transient of the natural dynamics. Furthermore, we characterize the Pareto-optimal frontier with regards to guaranteed efficiency in the transient and the asymptote under a class of game-theoretic designs. Surprisingly, we show that there exists an extreme trade-off between the long-term and short-term guarantees in that an asymptotically optimal game-theoretic design can perform arbitrarily bad in the transient."
-        },
-        "w3":{
-            "title": "The anarchy-stability tradeoff in congestion games",
-            "authors": "<b>R. Chandan</b>, D. Paccagnan and J. R. Marden",
-            "conference": "TBA",
-            "conferencelong": "To Be Announced (TBA)",
-            "date": "2021",
-            "status": "working",
-            "pdfFile": "",
-            "url": "https://arxiv.org/abs/2107.06331",
-            "abstract": "This work focuses on the design of incentive mechanisms in congestion games, a commonly studied model for competitive resource sharing. While the majority of the existing literature on this topic focuses on unilaterally optimizing the worst case performance (i.e., price of anarchy), in this manuscript we investigate whether optimizing for the worst case has consequences on the best case performance (i.e., price of stability). Perhaps surprisingly, our results show that there is a fundamental tradeoff between these two measures of performance. Our main result provides a characterization of this tradeoff in terms of upper and lower bounds on the Pareto frontier between the price of anarchy and the price of stability. Interestingly, we demonstrate that the mechanism that optimizes the price of anarchy inherits a matching price of stability, thereby implying that the best equilibrium is not necessarily any better than the worst equilibrium for such a design choice. Our results also establish that, in several well-studied cases, the unincentivized setting does not even lie on the Pareto frontier, and that any incentive with price of stability equal to 1 incurs a much higher price of anarchy."
-        },
-        "w2":{
-            "title": "A General Lotto game with asymmetric budget uncertainty",
-            "authors": "K. Paarporn, <b>R. Chandan</b>, M. Alizadeh and J. R. Marden",
-            "conference": "TBA",
-            "conferencelong": "To Be Announced (TBA)",
-            "date": "2021",
-            "status": "working",
-            "pdfFile": "",
-            "url": "https://arxiv.org/abs/2106.12133",
-            "abstract": "We consider General Lotto games of asymmetric information where one player's resource endowment is randomly assigned one of two possible values, and the assignment is not revealed to the opponent. We completely characterize the Bayes-Nash equilibria for two such formulations -- namely, one in which the opponent's endowment is fixed and common knowledge, and another where the opponent has a per-unit cost to utilize resources. We then highlight the impact these characterizations have on resource allocation problems involving a central commander that decides how to assign available resources to two sub-colonels competing in separate Lotto games against respective opponents. We find that randomized assignments, which induce the Bayesian game interactions, do not offer strategic advantages over deterministic ones when the opponents have fixed resource endowments. However, this is not the case when the opponents have per-unit costs to utilize resources. We find the optimal randomized assignment strategy can actually improve the commander's payoff two-fold when compared to optimal deterministic assignments, and four-fold in settings where the commander also pays a per-unit cost for resources."
-        },
+    "In Review": {
         "w1":{
-            "title": "When smoothness is not enough: Toward exact quantification and optimization of the price of anarchy",
-            "authors": "<b>R. Chandan</b>, D. Paccagnan and J. R. Marden",
-            "conference": "TBA",
-            "conferencelong": "To Be Announced (TBA)",
-            "date": "2021",
-            "status": "working",
-            "pdfFile": "./publications/chandan2021when.pdf",
-            "url": "https://arxiv.org/abs/1911.07823",
-            "abstract": "The design of incentives that promote efficient user behaviours in competitive settings hinges on our ability to accurately evaluate the performance of emergent system outcomes. In these settings, the most popular performance metric is the price of anarchy, which is the ratio between the worst emergent behaviour and the system optimum. Although the study of the price of anarchy is widespread, obtaining exact bounds even for a specified class of games remains a challenge. The widely studied smoothness framework (Roughgarden 2015) is capable of providing universal price of anarchy bounds for a large class of games, but fails to provide exact bounds when the system-level objective is not necessarily aligned with social welfare.\nGiven this limitation, we introduce a generalization of the smoothness framework which alleviates this issue. Based on this framework, we provide a tractable mechanism for computing the exact price of anarchy for a class of games wherein the sum over agents' local costs is not necessarily equal to the social cost (e.g., congestion games with incentives). Furthermore, we demonstrate how this mechanism extends naturally to a methodology for deriving incentive structures that optimize the price of anarchy. We conclude the paper by applying our techniques to the problem of rebate design in atomic congestion games. Interestingly, our findings suggest that there is a significant gap between the performance guarantees and efficient incentive structures in discrete environments when compared to their continuous flow counterparts.\n<i>For the interested reader, the authors provide a software package, available in both MATLAB® and Python, that implements the techniques described in this manuscript at <a target=\"_blank\" href=\"https://github.com/rahul-chandan/resalloc-poa\">https://github.com/rahul-chandan/resalloc-poa</a>.</i>"
+            "title": "On the feasibility of self-powered linear feedback control",
+            "authors": "<b>C. Ligeikis</b>, and J. Scruggs",
+            "conference": "IEEE TAC",
+            "conferencelong": "IEEE Transactions on Automatic Control (TAC)",
+            "date": "",
+            "status": "in review",
+            "pdfFile": "./publications/IEEE_TAC_SPSA.pdf",
+            "url": "",
+            "abstract": "A control system is called self-powered if the only energy it requires for operation is that which it absorbs from the plant. For a linear feedback law to be feasible for a self-powered control system, its feedback signal must be colocated with the control inputs, and its input-output mapping must satisfy an associated passivity constraint. The imposition of such a feedback law can be viewed equivalently as the imposition of a linear passive shunt admittance at the actuation ports of the plant. In this paper we consider the use of actively-controlled electronics to impose a self-powered linear feedback law. To be feasible, it is insufficient that the imposed admittance be passive, because parasitic losses must additionally be overcome. We derive sufficient feasibility conditions which explicitly account for these losses. In the finite-dimensional, time-invariant case, the feasibility condition distills to a more conservative version of the Positive Real Lemma, which is parametrized by various loss parameters. Three examples are given, in which this condition is used to determine the least-efficient loss parameters necessary to realize a desired feedback law."
         }
     },
     "Journal Articles": {
