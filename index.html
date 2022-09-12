@@ -92,14 +92,14 @@
                     <div class="text-sm-left text-center">
                         <h1>Connor Ligeikis</h1>
                         <p><b>PhD Candidate, NSF Graduate Research Fellow</b><br>
-                            Department of Civil and Environmental Engineering<br>
+                            Department of Civil & Environmental Engineering<br>
                             University of Michigan, Ann Arbor<br>
                             Email: <a href="mailto:ligeikis@umich.edu"><tt>ligeikis@umich.edu</tt></a>
                         </p>
                         <div class="socialicongroup">
-                            <a href="https://scholar.google.com/citations?user=TvO0cnsAAAAJ&hl=en"><i class="ai ai-google-scholar ai-2x socialicon"></i></a>
-                            <a href="https://www.linkedin.com/in/connor-ligeikis"><i class="fa fa-linkedin fa-2x socialicon"></i></a>
-                            <a href="./misc/ConnorLigeikisCV.pdf"><i class="ai ai-cv ai-2x socialicon"></i></a>
+                            <a href="https://scholar.google.com/citations?user=TvO0cnsAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar ai-2x socialicon"></i></a>
+                            <a href="https://www.linkedin.com/in/connor-ligeikis" target="_blank"><i class="fa fa-linkedin fa-2x socialicon"></i></a>
+                            <a href="./misc/ConnorLigeikisCV.pdf" target="_blank"><i class="ai ai-cv ai-2x socialicon"></i></a>
                         </div>
                     </div>
 		</div>
@@ -133,33 +133,53 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <div>
                     <p class="text-justify">
-                        I am a PhD student in the Department of Civil and Environmental Engineering at the University of Michigan, advised by <a href="https://cee.engin.umich.edu/people/scruggs-jeff/">Prof. Jeff Scruggs</a>.  Previously, I completed my BSE and MS in Civil Engineering at the University of Connecticut. I also received a second MS in Electrical and Computer Engineering from the University of Michigan.
+                        I am a PhD student in the Department of Civil & Environmental Engineering at the University of Michigan, advised by <a href="https://cee.engin.umich.edu/people/scruggs-jeff/">Prof. Jeff Scruggs</a>.  Previously, I received my BSE and MS degrees in Civil Engineering from the University of Connecticut in 2017 and 2019, respectively. I also received a second MS in Electrical & Computer Engineering from the University of Michigan in 2021. During the summer of 2019, I worked as a research intern at Sandia National Laboratories in Albuquerque, NM. My research interests broadly include vibration, control, mechatronics, and cyber-physical systems.
                     </p>
                 </div>
                 <div>
-                    <p class="text-justify"><strong>Research Overview:</strong> My research work focuses on the applications of game theory and optimization to problems at the intersection of economics, engineering, computer science and operations research.  I have recently been investigating the design of coordination mechanisms and the manipulation of information in multiagent systems (for example, traffic routing, political campaigns, flocks of drones, etc.).</p>
+                    <p class="text-justify"><strong>Research Overview:</strong> Throughout my MS and PhD studies, I have conducted both analytical and experimental research, spanning the fields of structural dynamics, control systems, energy harvesting, mechatronics, and uncertainty quantification. The list below briefly summarizes the research projects I've worked on as a graduate student and includes links to relevant publications.</p>
                     <ul class="list-unstyled">
                         <li class="media">
-                            <img src="./figs/hippos.jpg" class="rounded mr-3" style="width:120px; height:auto;" alt="A game of Hungry, Hungry Hippos.">
+                            <!--<img src="./figs/hippos.jpg" class="rounded mr-3" style="width:120px; height:auto;" alt="A game of Hungry, Hungry Hippos."> -->
                             <div class="media-body">
-                                <p class="text-justify" style="margin-bottom: 0px;"><strong>1) Coordination mechanisms for the common good:</strong>  In systems with limited resources, the uncoordinated actions of self-interested decision makers have been observed to significantly deviate from joint behaviour that would otherwise maximize the system welfare (see, for example, the <a href="https://en.wikipedia.org/wiki/Tragedy_of_the_commons"><em>tragedy of the commons</em></a> and <a href="https://en.wikipedia.org/wiki/Price_of_anarchy"><em>Price of Anarchy</em></a> in economics).  The study of <em>coordination mechanisms</em> aims to identify interventions that mitigate such losses in the system welfare.  Examples of coordination mechanisms are monetary tolls and rebates in transportation networks.  Though inefficiencies under self-interested decision making are inevitable, appropriately designed coordination mechanisms significantly improve the system welfare of the emergent behaviour.<br>
-                                Within this research area, I have pursued the following directions:</p>
+                                <p class="text-justify" style="margin-bottom: 0px;"><strong>1) Self-powered feedback control systems:</strong> A self-powered system is a control actuation technology that derives all energy to power its operations from
+				the dynamic response of the plant in which it is embedded. In the context of structural control of buildings
+				or bridges, such systems are attractive as they do not rely on any external power supply, which may be
+				unreliable during extreme events such as earthquakes. The simplest example of a self-powered control
+				system consists of an electromechanical transducer embedded within a vibratory system and electrically
+				connected to an energy storage subsystem (e.g., a supercapacitor). In this configuration, the transducer is
+				able to absorb energy from the vibrating structure (by converting mechanical energy to electrical energy),
+				store that energy in the supercapacitor, and then intelligently re-inject that stored energy at a future time to
+				reduce the vibratory response. More generally, a network of several transducers could be embedded within a
+				single structure (or in different structures) and share power with each other via a single storage system. The
+				synthesis of feedback control laws for use with self-powered systems is challenging, as they must explicitly
+				account for parasitic losses in the transducers, power electronics, and energy storage subsystem. Given this context, my dissertation research has focused on:</p>
                                 <ul style="margin-bottom: 1rem; list-style: initial; padding-left: 1rem;">
-                                    <li>Efficient and exact techniques for computing optimal coordination mechanisms [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w1'])">W1</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Journal Articles']['j2'])">J2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c6'])">C6</a>];</li>
-                                    <li>Robustness of coordination mechanisms to information inconsistencies [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c7'])">C7</a>]; and,</li>
-                                    <li>Inherent tradeoffs in the joint optimization of the worst- and best-case efficiency [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w3'])">W3</a>], and the short- and long-term efficiency [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w4'])">W4</a>].</li>
+                                    <li>Identification of theoretical conditions that guarantee self-powered feasibility of feedback control laws [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w1'])">W1</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Journal Articles']['j2'])">J2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c6'])">C6</a>]</li>
+                                    <li>Development of tractable approaches for the design of both linear and nonlinear self-powered feedback controllers [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c7'])">C7</a>]</li>
+                                    <li>Experimental validation of a prototype self-powered structural control system using real-time hybrid simulation (RTHS) [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w3'])">W3</a>] [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w4'])">W4</a>]</li>
                                 </ul>
                             </div>
                         </li>
                         <li class="media">
-                            <img src="./figs/poker.jpg" class="rounded mr-3" style="width:120px; height:auto;" alt="A game of chess before play begins.">
+                            <!--<img src="./figs/poker.jpg" class="rounded mr-3" style="width:120px; height:auto;" alt="A game of chess before play begins.">-->
                             <div class="media-body">
-                                <p class="text-justify" style="margin-bottom: 0px;"><strong>2) The strategic role of information in competitive environments:</strong> Real-world competitive resource allocation problems (for example, political campaigns, competitive markets, military strategy, etc.) can be represented as vast interaction graphs with self-interested decision makers at the nodes, and competitions over valuable prizes on the edges.  Beyond the characterization of strategic behaviour under established models (for example, positional games, contests, Colonel Blotto games, etc.), it is important to determine whether exogenous mechanisms exist whereby a decision maker can improve her competitive position.  My recent work in this area centres on identifying the benefits that withholding, revealing, and otherwise manipulating information can have in competitive environments.<br>
-                                Within this research area, I have pursued the following directions:</p>
+                                <p class="text-justify" style="margin-bottom: 0px;"><strong>2) Energy harvesting:</strong> </p>
                                 <ul style="margin-bottom: 1rem; list-style: initial; padding-left: 1rem;">
-                                    <li>Value of budgetary and system-level information in competitive environments [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w2'])">W2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c4'])">C4</a>];</li>
+                                    <!--<li>Value of budgetary and system-level information in competitive environments [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w2'])">W2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c4'])">C4</a>];</li>
                                     <li>Revealing strategic information to improve one's competitive position (for example, pre-commitments, concessions) [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c5'])">C5</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c9'])">C9</a>]; and,</li>
-                                    <li>Delegation of budgetary resources in teams [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w2'])">W2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c8'])">C8</a>].</li>
+                                    <li>Delegation of budgetary resources in teams [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w2'])">W2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c8'])">C8</a>].</li>-->
+                                </ul>
+                            </div>
+                        </li>
+			<li class="media">
+                            <!--<img src="./figs/poker.jpg" class="rounded mr-3" style="width:120px; height:auto;" alt="A game of chess before play begins.">-->
+                            <div class="media-body">
+                                <p class="text-justify" style="margin-bottom: 0px;"><strong>2) Uncertainty quantification via real-time hybrid simulation:</strong> </p>
+                                <ul style="margin-bottom: 1rem; list-style: initial; padding-left: 1rem;">
+                                    <!--<li>Value of budgetary and system-level information in competitive environments [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w2'])">W2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c4'])">C4</a>];</li>
+                                    <li>Revealing strategic information to improve one's competitive position (for example, pre-commitments, concessions) [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c5'])">C5</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c9'])">C9</a>]; and,</li>
+                                    <li>Delegation of budgetary resources in teams [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w2'])">W2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c8'])">C8</a>].</li>-->
                                 </ul>
                             </div>
                         </li>
