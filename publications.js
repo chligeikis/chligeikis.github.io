@@ -2,38 +2,49 @@ publications = {
     "In Review": {
         "w1":{
             "title": "On the feasibility of self-powered linear feedback control",
-            "authors": "<b>C. Ligeikis</b>, and J. Scruggs",
+            "authors": "<b>C. Ligeikis</b> and J. Scruggs",
             "conference": "IEEE TAC",
             "conferencelong": "IEEE Transactions on Automatic Control (TAC)",
             "date": "",
             "status": "in review",
-            "pdfFile": "./publications/IEEE_TAC_SPSA.pdf",
+            "pdfFile": "",
             "url": "",
             "abstract": "A control system is called self-powered if the only energy it requires for operation is that which it absorbs from the plant. For a linear feedback law to be feasible for a self-powered control system, its feedback signal must be colocated with the control inputs, and its input-output mapping must satisfy an associated passivity constraint. The imposition of such a feedback law can be viewed equivalently as the imposition of a linear passive shunt admittance at the actuation ports of the plant. In this paper we consider the use of actively-controlled electronics to impose a self-powered linear feedback law. To be feasible, it is insufficient that the imposed admittance be passive, because parasitic losses must additionally be overcome. We derive sufficient feasibility conditions which explicitly account for these losses. In the finite-dimensional, time-invariant case, the feasibility condition distills to a more conservative version of the Positive Real Lemma, which is parametrized by various loss parameters. Three examples are given, in which this condition is used to determine the least-efficient loss parameters necessary to realize a desired feedback law."
         }
     },
     "Journal Articles": {
+	 "j3":{
+            "title": "Training of a classifier for structural component failure based on hybrid simulation and kriging",
+            "authors": "G. Abbiati, S. Marelli, <b>C. Ligeikis </b>, R. Christenson, and B. Stojadinovic",
+            "conference": "J Eng Mech",
+            "conferencelong": "Journal of Engineering Mechanics",
+            "date": "2022",
+            "status": "",
+            "pdfFile": "",
+            "url": "https://doi.org/10.1061/(ASCE)EM.1943-7889.0002048",
+            "abstract": "Hybrid simulation is a tool for investigating the dynamic response of a structural prototype subjected to realistic loading. Hybrid simulation is conducted using a hybrid model that combines physical and numerical substructures interacting with each other in a feedback loop. As a result, the tested substructure interacts with a realistic assembly subjected to a credible loading scenario. In the current practice, experimental results obtained via hybrid simulation support conceptualization and calibration of computational models for structural analysis. Instead, this paper extends the scope of hybrid simulation in constructing a safe/failure state classifier for the tested substructure by adaptively designing a sequence of parametrized hybrid simulations. Such a classifier is intended to compute the state of any physical-substructure-like component within system-level numerical simulations. It follows that the main contribution of this paper lies in the way experimental results are aggregated and integrated with structural analysis. The proposed procedure is experimentally validated for a three-degrees-of-freedom hybrid model subjected to Euler buckling."
+        },
         "j2":{
-            "title": "Optimal taxes in congestion games",
-            "authors": "D. Paccagnan, <b>R. Chandan</b>, B. L. Ferguson and J. R. Marden",
-            "conference": "ACM TEAC",
-            "conferencelong": "ACM Transactions on Economics and Computation (TEAC)",
-            "date": "2021",
-            "status": "published",
-            "pdfFile": "./publications/paccagnan2020incentivizing.pdf",
-            "url": "https://arxiv.org/abs/1911.09806v3",
-            "abstract": "How can we design mechanisms to promote efficient use of shared resources? Here, we answer this question in relation to the well-studied class of atomic congestion games, used to model a variety of problems, including traffic routing. Within this context, a methodology for designing tolling mechanisms that minimize the system inefficiency (price of anarchy) exploiting solely local information is so far missing in spite of the scientific interest. In this manuscript we resolve this problem through a tractable linear programming formulation that applies to and beyond polynomial congestion games. When specializing our approach to the polynomial case, we obtain tight values for the optimal price of anarchy and corresponding tolls, uncovering an unexpected link with load balancing games. We also derive optimal tolling mechanisms that are constant with the congestion level, generalizing the results of [8] to polynomial congestion games and beyond. Finally, we apply our techniques to compute the efficiency of the marginal cost mechanism. Surprisingly, optimal tolling mechanism using only local information perform closely to existing mechanism that utilize global information [6], while the marginal cost mechanism, known to be optimal in the continuous-flow model, has lower efficiency than that encountered levying no toll. All results are tight for pure Nash equilibria, and extend to coarse correlated equilibria."
+            "title": "Identifying stochastic frequency response functions using real-time hybrid substructuring, principal component analysis, and kriging metamodeling",
+            "authors": "<b>C. Ligeikis</b> and R. Christenson",
+            "conference": "Exp Tech",
+            "conferencelong": "Experimental Techniques",
+            "date": "2020",
+            "status": "",
+            "pdfFile": "",
+            "url": "https://doi.org/10.1007/s40799-020-00389-2",
+            "abstract": "Real-time hybrid substructuring (RTHS) has previously been shown to be an effective tool to quantify the effect of parametric uncertainties on the response of a structural system. Proposed and implemented in this paper is a method that combines RTHS, Principal Component Analysis, and Kriging to metamodel the frequency response functions of a structure. The proposed method can be used to account for parametric variation in both the numerical and physical substructures. This approach is demonstrated using a series of bench-scale RTHS tests of a magnetorheological (MR) fluid damper used to control a 2 degree-of-freedom mass-spring system. The numerical system spring stiffnesses and the physical current supplied to the MR damper are each treated as uniformly distributed random variables. The RTHS test data is used to train computationally fast metamodels, which can then be used to conduct Monte Carlo simulations to determine distributions of the system response. The proposed methodology is shown to be both efficient and accurate."
         },
         "j1":{
-            "title": "Utility design for distributed resource allocation—part i: Characterizing and optimizing the exact price of anarchy",
-            "authors": "D. Paccagnan, <b>R. Chandan</b> and J. R. Marden",
-            "conference": "IEEE TAC",
-            "conferencelong": "IEEE Transactions on Automatic Control (TAC)",
-            "date": "2019",
+            "title": "Assessing structural reliability using real-time hybrid substructuring",
+            "authors": "<b>C. Ligeikis</b> and R. Christenson",
+            "conference": "Int J Lifecycle Perform Eng",
+            "conferencelong": "International Journal of Lifecycle Performance Engineering",
+            "date": "2020",
             "status": "published",
-            "pdfFile": "./publications/paccagnan2019utility.pdf",
-            "url": "https://arxiv.org/abs/1807.01333v3",
-            "abstract": "Game theory has emerged as a fruitful paradigm for the design of networked multiagent systems. A fundamental component of this approach is the design of agents' utility functions so that their self-interested maximization results in a desirable collective behavior. In this work we focus on a well-studied class of distributed resource allocation problems where each agent is requested to select a subset of resources with the goal of optimizing a given system-level objective. Our core contribution is the development of a novel framework to tightly characterize the worst case performance of any resulting Nash equilibrium (price of anarchy) as a function of the chosen agents' utility functions. Leveraging this result, we identify how to design such utilities so as to optimize the price of anarchy through a tractable linear program. This provides us with a priori performance certificates applicable to any existing learning algorithm capable of driving the system to an equilibrium. Part II of this work specializes these results to submodular and supermodular objectives, discusses the complexity of computing Nash equilibria, and provides multiple illustrations of the theoretical findings."
+            "pdfFile": "",
+            "url": "10.1504/IJLCPE.2020.10031040",
+            "abstract": "While numerical simulations can be used to predict the dynamic performance of structural systems, there are some instances where the dynamical behaviour and uncertainties of specific system components may be difficult to accurately model. In these instances, structural reliability assessments may be conducted by employing the cyber-physical real-time hybrid sub-structuring (RTHS) test method. In this approach, a numerical model of a larger structural system, incorporating uncertainty in specific parameters, is coupled with a physical test specimen of a system component to fully capture system-level dynamic interactions and facilitate uncertainty propagation. This paper specifically details a study performed to experimentally validate the previously proposed adaptive Kriging-Hybrid simulation (AK-HS) structural reliability method. The AK-HS method combines Kriging metamodeling, an adaptive learning algorithm, Monte Carlo simulation, and RTHS testing to iteratively estimate a structural system's probability of failure given random parameters in the numerical model. The method is validated with a series of bench-scale RTHS tests on a viscous damper connecting two adjacent 6-degree-of-freedom rigid body structures. The AK-HS method is shown to accurately predict probabilities of failure for systems with up to 24 random variables using a reasonable number of RTHS tests."
         }
     },
     "Peer-Reviewed Conference Articles":{

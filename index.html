@@ -114,9 +114,9 @@
                     <li class="nav-item" role="presentation"> 
                         <button class="nav-link active" id="home-tab" data-toggle="tab" href="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
                     </li> 
-                    <!-- <li class="nav-item" role="presentation">
+                    <li class="nav-item" role="presentation">
                         <button class="nav-link" id="research-tab" data-toggle="tab" href="#research" type="button" role="tab" aria-controls="research" aria-selected="false">Research</button>
-                    </li> -->
+                    </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="publications-tab" data-toggle="tab" href="#publications" type="button" role="tab" aria-controls="publications" aria-selected="false">Publications</button>
                     </li>
@@ -133,11 +133,16 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <div>
                     <p class="text-justify">
-                        I am a PhD student in the Department of Civil & Environmental Engineering at the University of Michigan, advised by <a href="https://cee.engin.umich.edu/people/scruggs-jeff/">Prof. Jeff Scruggs</a>.  Previously, I received my BSE and MS degrees in Civil Engineering from the University of Connecticut in 2017 and 2019, respectively. I also received a second MS in Electrical & Computer Engineering from the University of Michigan in 2021. During the summer of 2019, I worked as a research intern at Sandia National Laboratories in Albuquerque, NM. My research interests broadly include vibration, control, mechatronics, and cyber-physical systems.
+                        I am a PhD student in the Department of Civil & Environmental Engineering at the University of Michigan, advised by <a href="https://cee.engin.umich.edu/people/scruggs-jeff/">Prof. Jeff Scruggs</a>.  Previously, I received my BSE and MS degrees in Civil Engineering from the University of Connecticut in 2017 and 2019, respectively. I also received a second MS in Electrical & Computer Engineering from the University of Michigan in 2021. During the summer of 2019, I worked as a research intern at Sandia National Laboratories in Albuquerque, NM. I am currently a National Science Foundation Graduate Research Fellow, and was previously awarded a US Department of Education GAANN Fellowship. My research interests broadly include vibration, control, mechatronics, and cyber-physical systems.
                     </p>
                 </div>
-                <div>
-                    <p class="text-justify"><strong>Research Overview:</strong> Throughout my MS and PhD studies, I have conducted both analytical and experimental research, spanning the fields of structural dynamics, control systems, energy harvesting, mechatronics, and uncertainty quantification. The list below briefly summarizes the research projects I've worked on as a graduate student and includes links to relevant publications.</p>
+                <h3 style="margin-top:30px; margin-bottom: 30px">Select Publications</h3>
+                <div class="row" id="selpub"></div>
+                <h3 style="margin-top:30px; margin-bottom: 30px">News</h3>
+                <div class="row" id="news" style="margin-bottom: 50px"></div>
+            </div>
+            <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-tab">
+                <p class="text-justify"><strong>Research Overview:</strong> Throughout my MS and PhD studies I have conducted both analytical and experimental research, spanning the fields of structural dynamics, control systems, energy harvesting, mechatronics, and uncertainty quantification. The list below briefly summarizes the major research projects I've worked on as a graduate student and includes links to relevant publications.</p>
                     <ul class="list-unstyled">
                         <li class="media">
                             <!--<img src="./figs/hippos.jpg" class="rounded mr-3" style="width:120px; height:auto;" alt="A game of Hungry, Hungry Hippos."> -->
@@ -154,7 +159,7 @@
 				single structure (or in different structures) and share power with each other via a single storage system. The
 				synthesis of feedback control laws for use with self-powered systems is challenging, as they must explicitly
 				account for parasitic losses in the transducers, power electronics, and energy storage subsystem. Given this context, my dissertation research has focused on:</p>
-                                <ul style="margin-bottom: 1rem; list-style: initial; padding-left: 1rem;">
+                                <ul style="margin-bottom: 1rem; list-style: initial; padding-left: 3rem;">
                                     <li>Identification of theoretical conditions that guarantee self-powered feasibility of feedback control laws [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w1'])">W1</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Journal Articles']['j2'])">J2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c6'])">C6</a>]</li>
                                     <li>Development of tractable approaches for the design of both linear and nonlinear self-powered feedback controllers [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c7'])">C7</a>]</li>
                                     <li>Experimental validation of a prototype self-powered structural control system using real-time hybrid simulation (RTHS) [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w3'])">W3</a>] [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w4'])">W4</a>]</li>
@@ -175,27 +180,18 @@
 			<li class="media">
                             <!--<img src="./figs/poker.jpg" class="rounded mr-3" style="width:120px; height:auto;" alt="A game of chess before play begins.">-->
                             <div class="media-body">
-                                <p class="text-justify" style="margin-bottom: 0px;"><strong>2) Uncertainty quantification via real-time hybrid simulation:</strong> </p>
-                                <ul style="margin-bottom: 1rem; list-style: initial; padding-left: 1rem;">
-                                    <!--<li>Value of budgetary and system-level information in competitive environments [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w2'])">W2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c4'])">C4</a>];</li>
-                                    <li>Revealing strategic information to improve one's competitive position (for example, pre-commitments, concessions) [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c5'])">C5</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c9'])">C9</a>]; and,</li>
-                                    <li>Delegation of budgetary resources in teams [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w2'])">W2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c8'])">C8</a>].</li>-->
+                                <p class="text-justify" style="margin-bottom: 0px;"><strong>3) Uncertainty quantification via real-time hybrid simulation:</strong> RTHS is a cyber-physical vibration testing method that partitions a structural system into numerical and physical substructures. RTHS incorporates sensing, actuation, and computing technologies to couple these substructures in real time such that the full system performance may be studied.  
+				The method can be used to realistically examine the dynamics of structural systems with rate-dependent components that may be difficult to accurately model. However, uncertainty can be found in many aspects of RTHS testing including noise in sensor measurements, actuator performance and tracking, non-linearities in the physical test specimen, and numerical modeling assumptions. In the numerical substructure, uncertainty in material properties, stiffness, damping, or geometry may be considered random variables. 
+				Certain physical substructure characteristics may also be similarly parameterized. My research aimed to develop and experimentally validate techniques that incorporate these parametric uncertainties into RTHS testing protocols, thereby improving the robustness of the RTHS method. This work included:</p>
+                                <ul style="margin-bottom: 1rem; list-style: initial; padding-left: 3rem;">
+                                    <li>Experimental validation of a structural reliability method known as Adaptive-Kriging Hybrid Simulation (AKHS) on a vibratory system with 24 random parameters [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w1'])">W1</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Journal Articles']['j2'])">J2</a>,<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c6'])">C6</a>]</li>
+                                    <li>Development and validation of a method to identify metamodels of a system’s frequency response functions using principal component analysis, Kriging, and RTHS   [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['Peer-Reviewed Conference Articles']['c7'])">C7</a>]</li>
+                                    <li>Collaboration with researchers at ETH Zurich to experimentally quantify the buckling probability of an aluminum plate with uncertain boundary conditions using AKHS and psuedodynamic hybrid testing [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w3'])">W3</a>] [<a href="#" data-toggle="modal" data-target="#myModal" onclick="fillModal(publications['In Review']['w4'])">W4</a>]</li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <h3 style="margin-top:30px; margin-bottom: 30px">Select Publications</h3>
-                <div class="row" id="selpub"></div>
-                <h3 style="margin-top:30px; margin-bottom: 30px">News</h3>
-                <div class="row" id="news" style="margin-bottom: 50px"></div>
-            </div>
-            <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-tab">
-                <p>
-                    My research work focuses on the applications of game theory and optimization to problems at the intersection of engineering, computer science and operations research.
-                    I have recently been investigating the design of influence mechanisms and the manipulation of information for the coordination of multiagent systems (for example, traffic routing, political campaigns, flocks of drones, etc.).
-                </p>
-            </div>
             <div class="tab-pane fade" id="publications" role="tabpanel" aria-labelledby="publications-tab">
             </div>
             <div class="tab-pane fade" id="software" role="tabpanel" aria-labelledby="software-tab">

@@ -4,6 +4,7 @@ selPubs = [];
 //selPubs.push(publications["In Review"]["w3"]);
 //selPubs.push(publications["In Review"]["w2"]);
 selPubs.push(publications["In Review"]["w1"]);
+selPubs.push(publications["Journal Articles"]["j3"]);
 selPubs.push(publications["Journal Articles"]["j2"]);
 for (idx in selPubs) {
     pub = selPubs[idx];
@@ -25,7 +26,7 @@ for (keyIdx in Object.keys(publications)) {
         if (pub.status == "in review") {
            pubsHTML+='<li style="margin-bottom: 15px"><a class="text-capitalize" href="'+pub.url+'" target="_blank">'+pub.title+'</a><br>'+pub.authors+'<br>Submitted to <i>'+pub.conferencelong+'</i></li>';
         } else {
-            pubsHTML+='<li style="margin-bottom: 15px"><a class="text-capitalize" href="'+pub.url+'" target="_blank">'+pub.title+'</a><br>'+pub.authors+'<br><i>'+pub.conferencelong+'</i> <i>('+pub.status+')<\i>, '+pub.date+'.</li>';
+            pubsHTML+='<li style="margin-bottom: 15px"><a class="text-capitalize" href="'+pub.url+'" target="_blank">'+pub.title+'</a><br>'+pub.authors+'<br><i>'+pub.conferencelong+', '+pub.date+'.</li>';
         }
     }
     pubsHTML += "</ul>";
