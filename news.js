@@ -25,7 +25,7 @@ news = [
 ,
     {
         "date": "February 2019",
-        "body": "I attended the PREEMPTIVE (Pacific Rim Earthquake Engineering Mitigation Protective Technologies International Virtual Environment) Advanced Studies Institute at the University of Costa Rica",
+        "body": "I attended the <i>PREEMPTIVE (Pacific Rim Earthquake Engineering Mitigation Protective Technologies International Virtual Environment)</i> Advanced Studies Institute at the University of Costa Rica",
         "url": ""
     }
 ,
