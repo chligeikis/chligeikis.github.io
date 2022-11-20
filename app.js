@@ -47,7 +47,7 @@ for (idx in news) {
         newsItm += " [<a href=" + news[idx].url + ">Link</a>]</p></div>";
     }
 
-    if (idx < 4) {
+    if (idx < 6) {
         newsShort += newsItm;
     }
     newsLong += newsItm;
