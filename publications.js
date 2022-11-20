@@ -1,7 +1,7 @@
 publications = {
     "In Review": {
         "w1":{
-            "title": "On the feasibility of self-powered linear feedback control",
+            "title": "On the Feasibility of Self-Powered Linear Feedback Control",
             "authors": "<b>C. Ligeikis</b> and J. Scruggs",
             "conference": "IEEE TAC",
             "conferencelong": "IEEE Transactions on Automatic Control (TAC)",
@@ -43,109 +43,54 @@ publications = {
             "date": "2020",
             "status": "published",
             "pdfFile": "",
-            "url": "10.1504/IJLCPE.2020.10031040",
+            "url": "https://doi.org/10.1504/IJLCPE.2020.10031040",
             "abstract": "While numerical simulations can be used to predict the dynamic performance of structural systems, there are some instances where the dynamical behaviour and uncertainties of specific system components may be difficult to accurately model. In these instances, structural reliability assessments may be conducted by employing the cyber-physical real-time hybrid sub-structuring (RTHS) test method. In this approach, a numerical model of a larger structural system, incorporating uncertainty in specific parameters, is coupled with a physical test specimen of a system component to fully capture system-level dynamic interactions and facilitate uncertainty propagation. This paper specifically details a study performed to experimentally validate the previously proposed adaptive Kriging-Hybrid simulation (AK-HS) structural reliability method. The AK-HS method combines Kriging metamodeling, an adaptive learning algorithm, Monte Carlo simulation, and RTHS testing to iteratively estimate a structural system's probability of failure given random parameters in the numerical model. The method is validated with a series of bench-scale RTHS tests on a viscous damper connecting two adjacent 6-degree-of-freedom rigid body structures. The AK-HS method is shown to accurately predict probabilities of failure for systems with up to 24 random variables using a reasonable number of RTHS tests."
         }
     },
     "Peer-Reviewed Conference Articles":{
-        "c9":{
-            "title": "The Art of Concession in General Lotto Games",
-            "authors": "<b>R. Chandan</b>, K. Paarporn, D. Kovenock, M. Alizadeh and J. R. Marden",
-            "conference": "GameNets 2021",
-            "conferencelong": "EAI Game Theory for Networks 2021",
-            "date": "2021",
-            "status": "presented, in proceedings",
-            "pdfFile": "./publications/chandan2021art.pdf",
-            "url": "./publications/chandan2021art.pdf",
-            "abstract": "Success in adversarial environments often requires investment into additional resources in order to improve one's competitive position. But, can intentionally decreasing one's own competitiveness ever provide strategic benefits in such settings? In this paper, we focus on characterizing the role of ``concessions'' as a component of strategic decision making. Specifically, we investigate whether a player can gain an advantage by either conceding budgetary resources or conceding valuable prizes to an opponent. While one might na{\"i}vely assume that the player cannot, our work demonstrates that -- perhaps surprisingly -- concessions do offer strategic benefits when made correctly. In the context of General Lotto games, we first show that neither budgetary concessions nor value concessions can be advantageous to either player in a 1-vs.-1 scenario. However, in settings where two players compete against a common adversary, we find opportunities for one of the two players to improve her payoff by conceding a prize to the adversary. We provide necessary and sufficient conditions on the parameters for which such concessions exist, and identify the optimal prize value to concede."
-        },
-        "c8":{
-            "title": "The Division of Assets in Multiagent Systems: A Case Study in Team Blotto Games",
-            "authors": "K. Paarporn, <b>R. Chandan</b>, M. Alizadeh and J. R. Marden",
-            "conference": "CDC 2021",
-            "conferencelong": "60th IEEE Conference on Decision and Control (CDC)",
-            "date": "2021",
-            "status": "in proceedings",
+	"c1":{
+            "title": "<i style=\"font-style: normal;\"> An LQG-Inspired Framework for Self-Powered Feedback Control </i>",
+            "authors": "<b>C. Ligeikis</b> and J. Scruggs",
+            "conference": "CDC 2022",
+            "conferencelong": "IEEE Conference on Decision and Control (CDC)",
+            "date": "2022",
+            "status": "accepted",
             "pdfFile": "",
-            "url": "https://arxiv.org/abs/2103.16688",
-            "abstract": "Multi-agent systems are designed to concurrently accomplish a diverse set of tasks at unprecedented scale. Here, the central problems faced by a system operator are to decide (i) how to divide available resources amongst the agents assigned to tasks and (ii) how to coordinate the behavior of the agents to optimize the efficiency of the resulting collective behavior. The focus of this paper is on problem (i), where we seek to characterize the impact of the division of resources on the best-case efficiency of the resulting collective behavior. Specifically, we focus on a team Colonel Blotto game where there are two sub-colonels competing against a common adversary in a two battlefield environment. Here, each sub-colonel is assigned a given resource budget and is required to allocate these resources independent of the other sub-colonel. However, their success is dependent on the allocation strategy of both sub-colonels. The central focus of this manuscript is on how to divide a common pool of resources among the two sub-colonels to optimize the resulting best-case efficiency guarantees. Intuitively, one would imagine that the more balanced the division of resources, the worse the performance, as such divisions restrict the sub-colonels' ability to employ joint randomized strategies that tend to be necessary for optimizing performance guarantees. However, the main result of this paper demonstrates that this intuition is actually incorrect. A more balanced division of resources can offer better performance guarantees than a more centralized division. Hence, this paper demonstrates that the resource division problem is highly non-trivial in such enmeshed environments and worthy of significant future research efforts."
+            "url": "",
+            "abstract": "Self-powered systems are vibration control technologies that fully power their operation via the harvesting, storage, and reuse of energy from exogenous plant disturbances. This paper explores the feasibility and synthesis of colocated feedback control laws for self-powered systems. These control laws are realized through the use of switch-mode power electronics to simulate shunt admittances. The feasible domain of the resulting \"self-powered synthetic admittance\" (SPSA) controllers is more restrictive than classical feedback passivity, due to parasitic transmission and storage losses in the system. In this paper, we derive sufficient conditions for the feasibility of finite-dimensional, linear time-invariant SPSA controllers and present a sub-optimal synthesis procedure for their design. The proposed methodology is employed to design a controller to reduce the seismic response of a base-isolated civil structure."
         },
-        "c7":{
-            "title": "Mission Level Uncertainty in Multi-Agent Resource Allocation",
-            "authors": "R. Konda, <b>R. Chandan</b> and J. R. Marden",
-            "conference": "CDC 2021",
-            "conferencelong": "60th IEEE Conference on Decision and Control (CDC)",
-            "date": "2021",
-            "status": "in proceedings",
+	"c2":{
+            "title": "Discrete-time, performance-guaranteed control of vibratory systems with power directionality constraints",
+            "authors": "<b>C. Ligeikis</b> and J. Scruggs",
+            "conference": "ACC 2022",
+            "conferencelong": "American Control Conference (ACC)",
+            "date": "2022",
+            "status": "in proceedings, presented",
             "pdfFile": "",
-            "url": "https://arxiv.org/abs/2106.04029",
-            "abstract": "In recent years, a significant research effort has been devoted to the design of distributed protocols for the control of multi-agent systems, as the scale and limited communication bandwidth characteristic of such systems render centralized control impossible. Given the strict operating conditions, it is unlikely that every agent in a multi-agent system will have local information that is consistent with the true system state. Yet, the majority of works in the literature assume that agents share perfect knowledge of their environment. This paper focuses on understanding the impact that inconsistencies in agents' local information can have on the performance of multi-agent systems. More specifically, we consider the design of multi-agent operations under a game theoretic lens where individual agents are assigned utilities that guide their local decision making. We provide a tractable procedure for designing utilities that optimize the efficiency of the resulting collective behavior (i.e., price of anarchy) for classes of set covering games where the extent of the information inconsistencies is known. In the setting where the extent of the informational inconsistencies is not known, we show -- perhaps surprisingly -- that underestimating the level of uncertainty leads to better price of anarchy than overestimating it."
+            "url": "https://ieeexplore.ieee.org/abstract/document/9867818",
+            "abstract": "We consider the design of feedback controllers for physical systems in which the actuators are constrained, such that they cannot inject power into the plant. Such constraints are called power directionality constraints (PDCs), and control technologies exhibiting them arise in both vibration suppression and energy harvesting applications. We consider the case in which the plant is linear, disturbances are stochastic, the response is stationary, and the performance is assessed via a multi-objective linear-quadratic measure. For this case, we develop a control design technique which consists of two design stages. In the first stage, a time-invariant static linear feedback law is optimized for performance, while also adhering to the PDC. In the second stage, a nonlinear feedback law is designed which guarantees to improve upon the optimized performance obtained in the first design stage. This nonlinear controller requires a small-scale semidefinite program to be solved in real-time. To accommodate the finite computational time required with this online optimization, the control methodology is developed entirely in a discrete-time setting. The technique is illustrated on a numerical example pertaining to a structural control system for a seismically-excited building."
         },
-        "c6":{
-            "title": "Tractable mechanisms for computing near-optimal utility functions",
-            "authors": "<b>R. Chandan</b>, D. Paccagnan and J. R. Marden",
-            "conference": "AAMAS 2021",
-            "conferencelong": "20th International Conference on Autonomous Agents and Multiagent Systems (AAMAS)",
+	"c3":{
+            "title": "Feasibility and synthesis of finite-dimensional, linear time-invariant synthetic admittances for self-powered systems",
+            "authors": "<b>C. Ligeikis</b> and J. Scruggs",
+            "conference": "CDC 2021",
+            "conferencelong": "IEEE Conference on Decision and Control (CDC)",
             "date": "2021",
             "status": "in proceedings, presented",
-            "pdfFile": "./publications/chandan2021tractable.pdf",
-            "url": "https://arxiv.org/abs/2102.04542",
-            "abstract": "Large scale multiagent systems must rely on distributed decision making, as centralized coordination is either impractical or impossible. Recent works approach this problem under a game theoretic lens, whereby utility functions are assigned to each of the agents with the hope that their local optimization approximates the centralized optimal solution. Yet, formal guarantees on the resulting performance cannot be obtained for broad classes of problems without compromising on their accuracy. In this work, we address this concern relative to the well-studied problem of resource allocation with nondecreasing submodular welfare functions. We show that optimally designed local utilities achieve an approximation ratio (price of anarchy) of `1−c/e`, where `c` is the function’s curvature and `e` is Euler’s constant. The upshot of our contributions is the design of approximation algorithms that are distributed and efficient, and whose performance matches that of the best existing (and centralized) schemes."
-        },
-        "c5":{
-            "title": "When showing your hand pays off: Announcing strategic intentions in Colonel Blotto games",
-            "authors": "<b>R. Chandan</b>, K. Paarporn and J. R. Marden",
-            "conference": "ACC 2020",
-            "conferencelong": "2020 American Control Conference (ACC)",
-            "date": "2020",
-            "status": "in proceedings, presented",
-            "pdfFile": "./publications/chandan2020when.pdf",
-            "url": "https://arxiv.org/abs/2002.11648v2",
-            "abstract": "In competitive adversarial environments, it is often advantageous to obfuscate one’s strategies or capabilities. However, revealing one’s strategic intentions may shift the dynamics of the competition in complex ways. Can it ever be advantageous to reveal strategic intentions to an opponent? In this paper, we consider three-stage Colonel Blotto games in which one player can choose whether or not to pre-commit resources to a single battlefield before play begins. This pre-commitment is public knowledge. In response, the opponent can either secure the battlefield by matching the pre-commitment with its own forces, or withdraw. In a two-player setting, we show that a weaker player never has an incentive to pre-commit any amount of resources to a battlefield regardless of how valuable it is. We then consider a three-player setting in which two players fight against a common adversary on separate fronts. Only one of the two players facing the adversary has the option of pre-committing. We find there are instances where this player benefits from pre-committing. The analysis indicates that under non-cooperative team settings and no possibility of forming alliances, there can be incentives to publicly announce one’s strategic intentions to an adversary."
+            "pdfFile": "",
+            "url": "https://ieeexplore.ieee.org/abstract/document/9683340",
+            "abstract": "Self-powered systems are vibration control technologies that fully power their operation via the harvesting, storage, and reuse of energy from exogenous plant disturbances. This paper explores the feasibility and synthesis of colocated feedback control laws for self-powered systems. These control laws are realized through the use of switch-mode power electronics to simulate shunt admittances. The feasible domain of the resulting \"self-powered synthetic admittance\" (SPSA) controllers is more restrictive than classical feedback passivity, due to parasitic transmission and storage losses in the system. In this paper, we derive sufficient conditions for the feasibility of finite-dimensional, linear time-invariant SPSA controllers and present a sub-optimal synthesis procedure for their design. The proposed methodology is employed to design a controller to reduce the seismic response of a base-isolated civil structure."
         },
         "c4":{
-            "title": "Characterizing the interplay between information and strength in Blotto games",
-            "authors": "K. Paarporn, <b>R. Chandan</b>, M. Alizadeh and J. R. Marden",
-            "conference": "CDC 2019",
-            "conferencelong": "58th IEEE Conference on Decision and Control (CDC)",
-            "date": "2019",
-            "status": "in proceedings",
-            "pdfFile": "./publications/paarporn2019characterizing.pdf",
-            "url": "https://arxiv.org/abs/1909.03382v2",
-            "abstract": "In competitive interactions between two opposing adversaries, informational asymmetries may provide an advantage to one competitor over the other. The application domains of this interplay are numerous, such as the security of cyber-physical systems, politics, and advertising campaigns. Hence it is important to identify the value information offers in these contests. In this paper, we investigate informational asymmetries in the Colonel Blotto game, which is a gametheoretic model of competitive resource allocation between two players over a finite set of battlefields. We consider a case where the battlefield valuations are subject to randomness, and one of the two players knows the valuations with certainty. The other knows only a distribution on the battlefield realizations. However, the informed player has fewer resources to allocate. We study a two battlefield setup in the Colonel Blotto game. We then focus on a three battlefield setup in the General Lotto game, a popular variant of the Colonel Blotto game. We characterize mixed equilibrium strategies and the equilibrium payoff as a function of the players’ budgets and battlefield valuations. This allows us to identify the parameter ranges in which the informed player has the competitive advantage. In a setting where both are uninformed and the weaker resource player has the option to exchange resources for information, we quantify the value of information when information costs a fraction of its budget."
-        },
-        "c3":{
-            "title": "When smoothness is not enough: Toward exact quantification and optimization of the price-of-anarchy",
-            "authors": "<b>R. Chandan</b>, D. Paccagnan and J. R. Marden",
-            "conference": "CDC 2019",
-            "conferencelong": "58th IEEE Conference on Decision and Control (CDC)",
-            "date": "2019",
-            "status": "in proceedings, presented",
-            "pdfFile": "./publications/chandan2019when.pdf",
-            "url": "https://arxiv.org/abs/1904.10915",
-            "abstract": "Today's multiagent systems have grown too complex to rely on centralized controllers, prompting increasing interest in the design of distributed algorithms. In this respect, game theory has emerged as a valuable tool to complement more traditional techniques. The fundamental idea behind this approach is the assignment of agents' local cost functions, such that their selfish minimization attains, or is provably close to, the global objective. Any algorithm capable of computing an equilibrium of the corresponding game will inherit an approximation ratio that is, in the worst case, equal to the price-of-anarchy of the considered class of equilibria. Therefore, a successful application of the game design approach hinges on the possibility to quantify and optimize the equilibrium performance.\nToward this end, we introduce the notion of generalized smoothness, and show that the resulting efficiency bounds are significantly tighter compared to those obtained using the traditional smoothness approach. Leveraging this newly-introduced notion, we quantify the equilibrium performance for the class of local resource allocation games. Finally, we show how the agents' local decision rules can be designed in order to optimize the efficiency of the corresponding equilibria, by means of a tractable linear program."
-        },
-        "c2":{
-            "title": "Computing optimal taxes in atomic congestion games",
-            "authors": "<b>R. Chandan</b>, D. Paccagnan, B. L. Ferguson and J. R. Marden",
-            "conference": "NetEcon 2019",
-            "conferencelong": "The 14th Workshop on the Economics of Networks, Systems and Computation (NetEcon)",
-            "date": "2019",
+            "title": "Nonlinear feedback controllers for self-powered systems with non-ideal energy storage subsystems",
+            "authors": "<b>C. Ligeikis</b> and J. Scruggs",
+            "conference": "ACC 2021",
+            "conferencelong": "American Control Conference (ACC)",
+            "date": "2021",
             "status": "in proceedings, presented",
             "pdfFile": "",
-            "url": "https://netecon19.inria.fr/files/2019/06/article-2-chandan.pdf",
-            "abstract": "When the performance of a system is dictated by the behaviour of its users, self-interested choices can result in sub-optimal system operation, as is the case in road traffic networks. The inefficiency resulting from such selfish behaviour is commonly measured by the ratio between the emergent worst-case system cost and the minimum system cost, termed price-of-anarchy. As the degree of inefficiency can be significant even for relatively simple systems (e.g., affine congestion games), researchers have proposed a variety of approaches to align the emergent selfish behaviour with the desired system objective. A well-studied and promising method is that of altering users' perceived costs by means of taxes."
-        },
-        "c1":{
-            "title": "Optimal Price of Anarchy in Cost-Sharing Games",
-            "authors": "<b>R. Chandan</b>, D. Paccagnan and J. R. Marden",
-            "conference": "ACC 2019",
-            "conferencelong": "2019 American Control Conference (ACC)",
-            "date": "2019",
-            "status": "in proceedings, presented",
-            "pdfFile": "./publications/chandan2019optimal.pdf",
-            "url": "https://arxiv.org/abs/1903.06288",
-            "abstract": "The design of distributed algorithms is central to the study of multiagent systems control. In this paper, we consider a class of combinatorial cost-minimization problems and propose a framework for designing distributed algorithms with a priori performance guarantees that are near-optimal. We approach this problem from a game-theoretic perspective, assigning agents cost functions such that the equilibrium efficiency (price of anarchy) is optimized. Once agents' cost functions have been specified, any algorithm capable of computing a Nash equilibrium of the system inherits a performance guarantee matching the price of anarchy. Towards this goal, we formulate the problem of computing the price of anarchy as a tractable linear program. We then present a framework for designing agents' local cost functions in order to optimize for the worst-case equilibrium efficiency. Finally, we investigate the implications of our findings when this framework is applied to systems with convex, nondecreasing costs."
+            "url": "https://ieeexplore.ieee.org/abstract/document/9483323",
+            "abstract": "A self-powered system is a control actuation technology that derives all energy to power its operations, from the dynamic response of the plant in which it is embedded. In order to maintain persistent operation, it must not exhaust its rechargeable energy storage subsystem. If the technology were perfectly efficient, this constraint would require that feasible feedback laws be passive. In the non-ideal case the constraint is more restrictive than mere passivity, because it must account for dissipations in the transduction network. One of the most significant factors limiting overall efficiency is the dissipation incurred when power is transmitted to or from storage. In the presence of these losses, the domain of feasible control laws includes a sub-domain of static colocated feedback laws, for which a certain static constraint holds for the feedback gain matrix. To obtain superior performance, this static feedback gain can be adapted in real-time, based on feedback measurements. This paper presents a nonlinear control design technique that accomplishes this adaptation while also guaranteeing feasibility. Although sub-optimal, the technique is guaranteed to improve upon the performance of the optimized static gain. The methodology is demonstrated in a simulation example pertaining to the self-powered control of a five-story civil structure subjected to seismic excitation."
         }
     }
 }
