@@ -51,7 +51,7 @@ publications = {
 	"c1":{
             "title": "<i style=\"font-style: normal;\"> An LQG-Inspired Framework for Self-Powered Feedback Control </i>",
             "authors": "<b>C. Ligeikis</b> and J. Scruggs",
-            "conference": "CDC 2022",
+            "conference": "CDC",
             "conferencelong": "IEEE Conference on Decision and Control (CDC)",
             "date": "2022",
             "status": "accepted",
@@ -62,7 +62,7 @@ publications = {
 	"c2":{
             "title": "Discrete-time, performance-guaranteed control of vibratory systems with power directionality constraints",
             "authors": "<b>C. Ligeikis</b> and J. Scruggs",
-            "conference": "ACC 2022",
+            "conference": "ACC",
             "conferencelong": "American Control Conference (ACC)",
             "date": "2022",
             "status": "in proceedings, presented",
@@ -73,7 +73,7 @@ publications = {
 	"c3":{
             "title": "Feasibility and synthesis of finite-dimensional, linear time-invariant synthetic admittances for self-powered systems",
             "authors": "<b>C. Ligeikis</b> and J. Scruggs",
-            "conference": "CDC 2021",
+            "conference": "CDC",
             "conferencelong": "IEEE Conference on Decision and Control (CDC)",
             "date": "2021",
             "status": "in proceedings, presented",
@@ -84,7 +84,7 @@ publications = {
         "c4":{
             "title": "Nonlinear feedback controllers for self-powered systems with non-ideal energy storage subsystems",
             "authors": "<b>C. Ligeikis</b> and J. Scruggs",
-            "conference": "ACC 2021",
+            "conference": "ACC",
             "conferencelong": "American Control Conference (ACC)",
             "date": "2021",
             "status": "in proceedings, presented",
